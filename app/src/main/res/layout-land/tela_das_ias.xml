@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    tools:context=".TelaDasIas">
+
+    <ImageView
+        android:id="@+id/btn_perfil"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_titulo_ias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Inteligências Artificiais"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_subtitulo_ias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Clique na IA desejada para ir ao site"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_titulo_ias" />
+
+    <!-- IA 1 -->
+    <ImageView
+        android:id="@+id/bg_ia_1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/container_components"
+        app:layout_constraintEnd_toStartOf="@id/bg_ia_2"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_subtitulo_ias" />
+
+    <ImageView
+        android:id="@+id/ia_1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/img_3"
+        app:layout_constraintBottom_toBottomOf="@id/bg_ia_1"
+        app:layout_constraintEnd_toEndOf="@id/bg_ia_1"
+        app:layout_constraintStart_toStartOf="@id/bg_ia_1"
+        app:layout_constraintTop_toTopOf="@id/bg_ia_1" />
+
+    <!-- IA 2 -->
+    <ImageView
+        android:id="@+id/bg_ia_2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/container_components"
+        app:layout_constraintBottom_toBottomOf="@id/bg_ia_1"
+        app:layout_constraintEnd_toStartOf="@id/bg_ia_3"
+        app:layout_constraintStart_toEndOf="@id/bg_ia_1"
+        app:layout_constraintTop_toTopOf="@id/bg_ia_1" />
+
+    <ImageView
+        android:id="@+id/ia_2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/img_4"
+        app:layout_constraintBottom_toBottomOf="@id/bg_ia_2"
+        app:layout_constraintEnd_toEndOf="@id/bg_ia_2"
+        app:layout_constraintStart_toStartOf="@id/bg_ia_2"
+        app:layout_constraintTop_toTopOf="@id/bg_ia_2" />
+
+    <!-- IA 3 -->
+    <ImageView
+        android:id="@+id/bg_ia_3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/container_components"
+        app:layout_constraintBottom_toBottomOf="@id/bg_ia_1"
+        app:layout_constraintEnd_toStartOf="@id/bg_ia_4"
+        app:layout_constraintStart_toEndOf="@id/bg_ia_2"
+        app:layout_constraintTop_toTopOf="@id/bg_ia_1" />
+
+    <ImageView
+        android:id="@+id/ia_3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/img_5"
+        app:layout_constraintBottom_toBottomOf="@id/bg_ia_3"
+        app:layout_constraintEnd_toEndOf="@id/bg_ia_3"
+        app:layout_constraintStart_toStartOf="@id/bg_ia_3"
+        app:layout_constraintTop_toTopOf="@id/bg_ia_3" />
+
+    <!-- IA 4 -->
+    <ImageView
+        android:id="@+id/bg_ia_4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/container_components"
+        app:layout_constraintBottom_toBottomOf="@id/bg_ia_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/bg_ia_3"
+        app:layout_constraintTop_toTopOf="@id/bg_ia_1" />
+
+    <ImageView
+        android:id="@+id/ia_4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/img_6"
+        app:layout_constraintBottom_toBottomOf="@id/bg_ia_4"
+        app:layout_constraintEnd_toEndOf="@id/bg_ia_4"
+        app:layout_constraintStart_toStartOf="@id/bg_ia_4"
+        app:layout_constraintTop_toTopOf="@id/bg_ia_4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
